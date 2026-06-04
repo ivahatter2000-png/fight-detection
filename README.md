@@ -18,7 +18,8 @@ diplom/
 ├── diplomchuk test.ipynb # Ноутбук тестирования модели
 ├── obuchenie.ipynb # Эксперименты с дообучением (неудачные)
 └── gotovaya rabota.ipynb # Итоговый ноутбук с анализом
-
+Ссылка на яндекс диск с my_videos, runs, видео для теста.mp4 и fight.mp4:
+https://disk.yandex.ru/d/LnggaYKL_oUUpw
 ## 🚀 Запуск приложения
 
 1. Установите зависимости (Conda рекомендуется):
