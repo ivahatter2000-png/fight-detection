@@ -62,7 +62,6 @@ Yolo_nano_weights.pt	235.4	0.68
 
 ![Uploading изображение.png…]()
 
-
 🧪 Эксперименты
 
     Сравнение двух моделей (ноутбук diplomchuk sravnenie.ipynb)
