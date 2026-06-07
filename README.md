@@ -34,7 +34,7 @@ diplom/
 
 └── gotovaya rabota.ipynb # Итоговый ноутбук с анализом
 
-Ссылка на яндекс диск с my_videos, runs, видео для теста.mp4 и fight.mp4:
+Ссылка на яндекс диск с my_videos, runs, видео для теста.mp4 и fight.mp4, а так же скриншотами работы:
 
 https://disk.yandex.ru/d/LnggaYKL_oUUpw
 
@@ -59,8 +59,6 @@ Yolo_nano_weights.pt	235.4	0.68
 Порог: 0.45
 
 Точность на своём датасете (2000 видео): 78.8%
-
-![Uploading изображение.png…]()
 
 🧪 Эксперименты
 
