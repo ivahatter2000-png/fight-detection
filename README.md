@@ -125,46 +125,6 @@ Yolo_nano_weights.pt
 Для задачи обнаружения конфликтов более важна точность, поэтому в качестве основной
 модели была выбрана YOLOv8 small.
 
-## Структура работы модели
-
-from ultralytics import YOLO
-import cv2
-import numpy as np
-
-MODEL_PATH = 'yolo_small_weights.pt'
-THRESHOLD = 0.45
-SAMPLE_INTERVAL = 30
-
-model = YOLO(MODEL_PATH)
-cap = cv2.VideoCapture(video_path)
-
-confidences = []
-frame_count = 0
-
-while True:
-    ret, frame = cap.read()
-
-    if not ret:
-        break
-
-    if frame_count % SAMPLE_INTERVAL == 0:
-        results = model(frame, verbose=False, imgsz=320)
-
-        for r in results:
-            if r.boxes is not None:
-                for box in r.boxes:
-                    cls = int(box.cls[0])
-
-                    if model.names[cls] == 'violence':
-                        confidences.append(float(box.conf[0]))
-
-    frame_count += 1
-
-cap.release()
-
-avg_conf = np.mean(confidences) if confidences else 0.0
-is_fight = bool(avg_conf >= THRESHOLD)
-
 ## Итоговые метрики
 
 Итоговая точность классификации на собственном датасете составила 78.8%.(заменить на
